@@ -154,10 +154,6 @@ html.lenis, html.lenis body {
   padding: 8rem 0;
 }
 
-@media (max-width: 768px) {
-  .section-padding { padding: 5rem 0; }
-}
-
 /* ===== Clip-path Reveal ===== */
 .clip-reveal {
   clip-path: inset(0 100% 0 0);
@@ -394,4 +390,76 @@ html.lenis, html.lenis body {
 
 .btn-ghost:hover .arrow {
   transform: translateX(4px);
+}
+
+/* =======================================================
+   MOBILE RESPONSIVENESS & TOUCH DEVICE FIXES
+   ======================================================= */
+
+/* 1. Prevent Bottom Floating Bar from covering content */
+@media (max-width: 1024px) {
+  body {
+    padding-bottom: 75px; 
+  }
+}
+
+/* 2. Better Mobile Section Padding */
+@media (max-width: 768px) {
+  .section-padding {
+    padding: 4rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-padding {
+    padding: 3rem 0;
+  }
+}
+
+/* 3. Disable Custom Cursor and Sticky Hovers on Touch Devices */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
+  
+  .btn-primary:active, 
+  .btn-outline:active, 
+  .btn-ghost:active {
+    transform: scale(0.98) !important;
+  }
+  
+  .btn-primary:hover::before {
+    transform: translateX(-100%) !important;
+  }
+  
+  .btn-primary:hover {
+    color: var(--irish-black) !important;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+
+  .img-zoom:hover img {
+    transform: scale(1) !important;
+  }
+}
+
+/* 4. Fix Overflow on Small Phones */
+@media (max-width: 380px) {
+  .w-80 {
+    width: 100% !important;
+    max-width: 85vw !important;
+  }
+  
+  .btn-primary, .btn-outline {
+    padding: 12px 20px;
+    font-size: 10px;
+  }
+}
+
+/* 5. Safe Area Insets for iPhones */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
 }
