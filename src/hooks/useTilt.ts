@@ -1,7 +1,5 @@
 import { useEffect, useRef } from 'react';
 
-type EasingFunction = (t: number) => number;
-
 interface UseTiltOptions {
   maxRotateX?: number;
   maxRotateY?: number;
