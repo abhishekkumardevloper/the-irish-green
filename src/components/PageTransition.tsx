@@ -1,4 +1,4 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 
 interface Props {
   children: React.ReactNode;
@@ -6,7 +6,7 @@ interface Props {
 
 const FOREST = '#123B2A';
 
-const panelVariants = {
+const panelVariants: Variants = {
   initial: { scaleX: 0, transformOrigin: 'left center' },
   animate: {
     scaleX: [0, 1, 1, 0],
@@ -19,7 +19,7 @@ const panelVariants = {
   },
 };
 
-const contentVariants = {
+const contentVariants: Variants = {
   initial: { opacity: 0 },
   animate: {
     opacity: 1,
