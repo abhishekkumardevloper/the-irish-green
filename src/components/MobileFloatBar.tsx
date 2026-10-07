@@ -17,7 +17,8 @@ export default function MobileFloatBar() {
         paddingBottom: 'env(safe-area-inset-bottom)',
       }}
     >
-      <div className="flex items-stretch divide-x" style={{ divideColor: 'rgba(184,154,99,0.2)' }}>
+      {/* Replaced invalid inline style 'divideColor' with Tailwind arbitrary value */}
+      <div className="flex items-stretch divide-x divide-[rgba(184,154,99,0.2)]">
         {/* BOOK TABLE */}
         <a
           href="#reservation"
