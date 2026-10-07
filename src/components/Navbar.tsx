@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
@@ -26,18 +26,18 @@ const NAV_ITEMS: NavItem[] = [
 ];
 
 /* ── Framer Motion Variants ─────────────────────────── */
-const drawerVariants = {
+const drawerVariants: Variants = {
   closed: {
     clipPath: 'inset(0 0 100% 0)',
-    transition: { duration: 0.5, ease: [0.87, 0, 0.13, 1] },
+    transition: { duration: 0.5, ease: [0.87, 0, 0.13, 1] as [number, number, number, number] },
   },
   open: {
     clipPath: 'inset(0 0 0% 0)',
-    transition: { duration: 0.55, ease: [0.87, 0, 0.13, 1] },
+    transition: { duration: 0.55, ease: [0.87, 0, 0.13, 1] as [number, number, number, number] },
   },
 };
 
-const linkVariants = {
+const linkVariants: Variants = {
   closed: { opacity: 0, y: 24 },
   open: (i: number) => ({
     opacity: 1,
@@ -45,14 +45,9 @@ const linkVariants = {
     transition: {
       delay: 0.15 + i * 0.07,
       duration: 0.45,
-      ease: [0.25, 0.46, 0.45, 0.94],
+      ease: [0.25, 0.46, 0.45, 0.94] as [number, number, number, number],
     },
   }),
-};
-
-const hamburgerVariants = {
-  closed: {},
-  open: {},
 };
 
 /* ── Leaf SVG Logo ──────────────────────────────────── */
