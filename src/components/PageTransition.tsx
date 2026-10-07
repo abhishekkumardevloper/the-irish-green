@@ -1,4 +1,4 @@
-import { motion, AnimatePresence, Variants } from 'framer-motion';
+import { motion, AnimatePresence, type Variants } from 'framer-motion';
 
 interface Props {
   children: React.ReactNode;
