@@ -1,5 +1,5 @@
 import { useRef, useState, useId, useCallback } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -41,13 +41,13 @@ function EnquiryModal({ onClose }: { onClose: () => void }) {
     setLoading(false);
   };
 
-  const overlayVariants = {
+  const overlayVariants: Variants = {
     hidden: { opacity: 0 },
     visible: { opacity: 1 },
     exit: { opacity: 0 },
   };
 
-  const panelVariants = {
+  const panelVariants: Variants = {
     hidden: { opacity: 0, y: 40, scale: 0.95 },
     visible: { opacity: 1, y: 0, scale: 1, transition: { type: 'spring', damping: 22, stiffness: 200 } },
     exit: { opacity: 0, y: 20, scale: 0.97, transition: { duration: 0.2 } },
