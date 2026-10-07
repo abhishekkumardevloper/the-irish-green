@@ -60,14 +60,14 @@ export const menuItems: MenuItem[] = [
   { id: 'starter-2', category: 'starters', name: 'Chilli Potato', description: 'Crispy fried potatoes tossed in Indo-Chinese spicy sauce', price: 249, image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80', isVeg: true, isFeatured: true, tags: ['Popular'] },
   
   // ---> PANEER TIKKA IMAGE UPDATED HERE <---
-  { id: 'starter-3', category: 'starters', name: 'Paneer Tikka', description: 'Marinated cottage cheese grilled in tandoor with peppers & onions', price: 349, image: 'https://images.unsplash.com/photo-1628296582103-625d97f5d720?w=600&q=80', isVeg: true, isFeatured: true, tags: ['Bestseller'] },
+  { id: 'starter-3', category: 'starters', name: 'Paneer Tikka', description: 'Marinated cottage cheese grilled in tandoor with peppers & onions', price: 349, image: 'https://www.indianveggiedelight.com/wp-content/uploads/2021/08/air-fryer-paneer-tikka.jpg', isVeg: true, isFeatured: true, tags: ['Bestseller'] },
   
   { id: 'starter-4', category: 'starters', name: 'Veg Spring Rolls', description: 'Crispy rolls stuffed with seasoned vegetables', price: 219, image: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=600&q=80', isVeg: true },
   { id: 'starter-5', category: 'starters', name: 'Stuffed Mushrooms', description: 'Button mushrooms stuffed with cheese and herbs, baked golden', price: 299, image: 'https://images.unsplash.com/photo-1506354666786-959d6d497f1a?w=600&q=80', isVeg: true },
 
   // Tandoori
   // ---> TANDOORI PANEER TIKKA IMAGE UPDATED HERE <---
-  { id: 'tandoori-1', category: 'tandoori', name: 'Tandoori Paneer Tikka', description: 'Marinated paneer in classic tandoori masala, smoky and charred', price: 369, image: 'https://images.unsplash.com/photo-1628296582103-625d97f5d720?w=600&q=80', isVeg: true, isFeatured: true },
+  { id: 'tandoori-1', category: 'tandoori', name: 'Tandoori Paneer Tikka', description: 'Marinated paneer in classic tandoori masala, smoky and charred', price: 369, image: 'https://myfoodstory.com/tandoori-paneer-tikka/', isVeg: true, isFeatured: true },
   
   { id: 'tandoori-2', category: 'tandoori', name: 'Malai Soya Chaap', description: 'Tender soya chaap in creamy malai marinade', price: 329, image: 'https://images.unsplash.com/photo-1599487488170-d11ec9c172f0?w=600&q=80', isVeg: true },
   { id: 'tandoori-3', category: 'tandoori', name: 'Tandoori Mushroom', description: 'Jumbo mushrooms marinated and grilled in tandoor', price: 299, image: 'https://images.unsplash.com/photo-1506354666786-959d6d497f1a?w=600&q=80', isVeg: true },
